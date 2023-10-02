@@ -1,0 +1,83 @@
+body{
+    margin: 0px;
+    background-color: #F28AB2;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#birthday{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #F1E6EA;
+    border: 1px solid #F1E6EA;
+    border-radius: 10px;
+    margin: 20px auto;
+    padding: 0px 30px;
+    width: 55vh;
+    padding-bottom: 20px;
+}
+
+#birthday h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 26px;
+    font-family: cursive;
+    padding: 4px;
+    height: 30px;
+    margin: 10px 0px;
+}
+
+.person{
+    display: flex;
+    height: 80px;
+    margin-bottom: 11px;
+    width: 100%;
+}
+
+.person-image{
+    width: 25%;
+}
+
+.person-image img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50px;
+}
+
+.person-detail{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 20px;
+}
+
+.person-detail h2{
+    margin: 0px;
+    padding-top: 5px;
+    font-size: 30px;
+    font-weight: 100;
+}
+
+.person-detail p{
+    margin: 0px;
+    font-size: 20px;
+}
+
+#birthday button{
+    width: 60%;
+    height: 40px;
+    background-color: #F28AB2;
+    color: #F1E6EA;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    border: 1px solid #F1E6EA;
+    font-size: 17px;
+    margin: auto;
+}
