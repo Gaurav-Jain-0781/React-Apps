@@ -1,16 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import { data } from "./Data";
 import List from "./List";
 import './index.css'
 
 function App() {
+  const [people, setPeople] = useState(data);
+
   return (
     <section id='birthday'>
-      <h1>{data.length} Birthdays today</h1>
-      {data.map((person) => {
+      <h1>{people.length} Birthdays today</h1>
+      {people.map((person) => {
         return <List key={person.id} {...person}></List>
       })}
-      <button onClick={console.log('UseState')}>Clear All</button>
+      <button onClick={() => setPeople([])}>Clear All</button>
     </section>
   );
 }
