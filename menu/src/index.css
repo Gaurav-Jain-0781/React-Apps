@@ -105,20 +105,21 @@ p {
   width: 90vw;
   margin: 0 auto;
   max-width: 1170px;
-  display: grid;
-  gap: 3rem 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem 5rem;
   justify-items: center;
 }
 
 .menu-item {
   display: grid;
   gap: 1rem 2rem;
-  max-width: 25rem;
+  max-width: 32rem;
 }
 
 .photo {
   object-fit: cover;
-  height: 200px;
+  height: 250px;
   width: 100%;
   border: 0.25rem solid #c59d5f;
   border-radius: 0.25rem;
