@@ -3,9 +3,24 @@ import Categories from "./Categories";
 import Menu from "./Menu";
 import items from "./data.js";
 
+const allcategories = ["all", ...new Set(items.map((item) => { return item.category }))]
+
+console.log(allcategories)
+
 function App() {
   const [menuItem, setMenuItem] = useState(items);
-  const [categories, setCategories] = useState([]); 
+  const [categories, setCategories] = useState(allcategories); 
+
+  const filterItem = ({category}) => {
+    if(category === 'all')
+      setMenuItem(items);
+    else{
+      const categoryItem = items.filter((item) => 
+      item.category === category
+      )
+      setMenuItem(categoryItem);
+    }
+  }
  
   return(
     <main>
@@ -14,7 +29,7 @@ function App() {
           <h4>Our Menu</h4>
           <div className="underline"></div>
         </div>        
-        <Categories/>
+        <Categories categories={categories} filterItem={filterItem}/>
         <Menu items={menuItem}/>
       </section>
     </main>

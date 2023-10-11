@@ -9,7 +9,7 @@ const Menu = ({items}) => {
                 <div className='item-info'>
                     <header>
                         <h4>{i.title}</h4>
-                        <h4 classname="price">${i.price}</h4>
+                        <h4 className="price">${i.price}</h4>
                     </header>
                     <p className='item-text'>{i.desc}</p>
                 </div>
